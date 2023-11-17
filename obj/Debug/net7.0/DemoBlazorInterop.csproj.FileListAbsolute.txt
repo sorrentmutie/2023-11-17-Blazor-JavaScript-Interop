@@ -825,3 +825,4 @@ E:\work\corsi\DemoBlazorInterop\obj\Debug\net7.0\DemoBlazorInterop.dll
 E:\work\corsi\DemoBlazorInterop\obj\Debug\net7.0\refint\DemoBlazorInterop.dll
 E:\work\corsi\DemoBlazorInterop\obj\Debug\net7.0\DemoBlazorInterop.pdb
 E:\work\corsi\DemoBlazorInterop\obj\Debug\net7.0\ref\DemoBlazorInterop.dll
+E:\work\corsi\DemoBlazorInterop\obj\Debug\net7.0\DemoBlazorInterop.sourcelink.json
