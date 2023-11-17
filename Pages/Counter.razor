@@ -1,0 +1,66 @@
+﻿@page "/counter"
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="PrimaFunzione">Esegui Prima Funzione</button>
+<button class="btn btn-primary" @onclick="SecondaFunzione">Esegui Seconda Funzione</button>
+<button class="btn btn-primary" @onclick="TerzaFunzione">Esegui Terza Funzione</button>
+<button class="btn btn-primary" @onclick="SayHello">Esegui SayHello</button>
+
+@somma
+
+@code {
+    private int currentCount = 0;
+    private int somma = 0;
+    private MyJavaScriptInterop? interop;
+
+    protected override void OnInitialized()
+    {
+        interop = new MyJavaScriptInterop(JSRuntime);
+    }
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+
+    private async Task PrimaFunzione()
+    {
+        if(interop is not null)
+        {
+            await interop.EseguiPrimaFunzione();
+        }
+    }
+
+    private async Task SecondaFunzione()
+    {
+        await interop!.EseguiSecondaFunzione(4, 7);
+
+        if (interop is not null)
+        {
+            somma = await interop.EseguiSecondaFunzione(4,7);
+        }
+    }
+
+    private async Task TerzaFunzione()
+    {
+        if (interop is not null)
+        {
+            await interop.EseguiTerzaFunzione();
+        }
+    }
+
+    private async Task SayHello()
+    {
+        if (interop is not null)
+        {
+            await interop.EseguiSayHello("Mario Rossi");
+        }
+    }
+}

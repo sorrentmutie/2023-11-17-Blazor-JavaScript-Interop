@@ -1,0 +1,34 @@
+﻿@inject ChartInterop chartInterop
+
+<div @ref="element" class="ct-chart"></div>
+<CascadingValue Value="this">
+     @ChildContent
+</CascadingValue>
+
+
+@code {
+    ElementReference element;
+
+    public ChartData ChartData { get; set; } = new();
+
+    [Parameter] public ChartType ChartType { get; set; } = ChartType.Line; 
+    [Parameter] public List<string> Labels { get; set; } = new();
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await chartInterop.ShowChart(element, ChartData, ChartType);
+        // if (firstRender == true)
+        // {
+        //     await chartInterop.ShowChart(element, ChartData, ChartType);
+        // } else
+        // {
+        //     await chartInterop.ShowChart(element, ChartData, ChartType);
+        // }
+    }
+
+    protected override void OnParametersSet()
+    {
+        ChartData.Labels = Labels;
+    }
+}

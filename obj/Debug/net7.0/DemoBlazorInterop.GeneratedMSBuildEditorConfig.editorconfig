@@ -1,0 +1,67 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = DemoBlazorInterop
+build_property.RootNamespace = DemoBlazorInterop
+build_property.ProjectDir = E:\work\corsi\DemoBlazorInterop\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\work\corsi\DemoBlazorInterop
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/work/corsi/DemoBlazorInterop/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Pages/Esperimenti.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXNwZXJpbWVudGkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Shared/Chart.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENoYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Shared/Modal.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/work/corsi/DemoBlazorInterop/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mgzx0n6kkk
+
+[E:/work/corsi/DemoBlazorInterop/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-6odfmk2227

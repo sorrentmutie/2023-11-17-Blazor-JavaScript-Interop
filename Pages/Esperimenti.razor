@@ -1,0 +1,62 @@
+﻿@page "/esperimenti"
+@inject ModalInterop interop
+@* @inject ChartInterop chartInterop *@
+
+@inject ChartService chartService
+
+<h3>Esperimenti</h3>
+<button @onclick="() => ApriModale()">Apri Modale</button>
+
+<Modal Id="myId" Title="Modale di Prova" OnSave="Save">
+    <Body>
+        <p>Contenuto della Modale</p>
+    </Body>
+</Modal>
+
+@* <button @onclick="FirstChart">Mostra Chart</button> *@
+
+
+
+
+<input type="checkbox" @bind="mostraOro" />
+<Chart ChartType="ChartType.Line" Labels="@labels">
+    @if (mostraOro)
+    {
+        <Series Values="@prezziOro"></Series>
+    }
+    <Series Values="@prezziPetrolio"></Series>
+</Chart>
+
+<Chart ChartType="ChartType.Bar" Labels="@labels">
+    <Series Values="@prezziOro"></Series>
+    <Series Values="@prezziPetrolio"></Series>
+</Chart>
+
+
+
+@code {
+    private ChartData chartData = new ChartData();
+    private List<string> labels = new();
+    private List<double> prezziOro = new();
+    private List<double> prezziPetrolio = new();
+    private Boolean mostraOro = true;
+
+
+    protected override void OnInitialized()
+    {
+        chartData = chartService.GetChartData();
+        labels = chartData.Labels;
+        prezziOro = chartData.Series.First().Data;
+        prezziPetrolio = chartData.Series.Last().Data;
+    }
+
+    private async Task Save()
+    {
+        await interop.HideModal();
+    }
+
+    private async Task ApriModale()
+    {
+        await interop.ShowModal("myId");
+    }
+}
